@@ -1,0 +1,23 @@
+{
+  "name": "elmish",
+  "version": "1.0.0",
+  "description": "A personalized Elm template powered by Vite",
+  "main": "src/index.js",
+  "scripts": {
+    "elm:dev": "elm reactor",
+    "elm:build": "elm make src/Main.elm --output src/elm.js",
+    "dev": "vite"
+  },
+  "keywords": [
+    "elm",
+    "functional",
+    "vite",
+    "template"
+  ],
+  "author": "shaun <mumkhong@skiff.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "vite": "^4.4.7",
+    "vite-plugin-elm": "^2.8.0"
+  }
+}
