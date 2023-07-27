@@ -42,11 +42,13 @@ view model =
             [ Html.button
                 [ onClick Decrement
                 , Attrs.class "py-3 px-5 bg-pink-200 rounded text-white"
-                ] [ Html.text "Sub" ]
+                ]
+                [ Html.text "Sub" ]
             , Html.div [ Attrs.class "text-center" ] [ Html.text <| String.fromInt model ]
-            , Html.button 
+            , Html.button
                 [ onClick Increment
                 , Attrs.class "py-3 px-5 bg-indigo-200 rounded text-white"
-                ] [ Html.text "Add" ]
+                ]
+                [ Html.text "Add" ]
             ]
         ]

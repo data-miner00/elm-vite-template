@@ -8,6 +8,9 @@ devDependencies:
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.27)
+  elm-tooling:
+    specifier: ^1.14.0
+    version: 1.14.0
   postcss:
     specifier: ^8.4.27
     version: 8.4.27
@@ -425,6 +428,11 @@ packages:
     hasBin: true
     dependencies:
       which: 2.0.2
+    dev: true
+
+  /elm-tooling@1.14.0:
+    resolution: {integrity: sha512-cIbK3gfYWK086HsqOIGM4reIYcV/FF2R/8jIJ6ZUy1/RSkYFUv2BgPTGYYZo1Io9oymmbwoCWWleNtw7LgGL2w==}
+    hasBin: true
     dev: true
 
   /esbuild@0.18.17:

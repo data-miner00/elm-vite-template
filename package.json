@@ -4,8 +4,9 @@
   "description": "A personalized Elm template powered by Vite",
   "main": "src/index.js",
   "scripts": {
+    "postinstall": "elm-tooling install",
     "elm:dev": "elm reactor",
-    "elm:build": "elm make src/Main.elm --output src/elm.js",
+    "elm:build": "elm make src/Main.elm --output dist/elm.js",
     "dev": "vite"
   },
   "keywords": [
@@ -18,6 +19,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "elm-tooling": "^1.14.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.7",
