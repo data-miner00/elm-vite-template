@@ -2,6 +2,7 @@ module Main exposing (Model, Msg, main)
 
 import Browser
 import Html exposing (Html)
+import Html.Attributes as Attrs
 import Html.Events exposing (onClick)
 
 
@@ -36,10 +37,16 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    Html.div []
+    Html.div [ Attrs.class "w-fit mx-auto mt-10" ]
         [ Html.div []
-            [ Html.button [ onClick Decrement ] [ Html.text "Sub" ]
-            , Html.div [] [ Html.text <| String.fromInt model ]
-            , Html.button [ onClick Increment ] [ Html.text "Add" ]
+            [ Html.button
+                [ onClick Decrement
+                , Attrs.class "py-3 px-5 bg-pink-200 rounded text-white"
+                ] [ Html.text "Sub" ]
+            , Html.div [ Attrs.class "text-center" ] [ Html.text <| String.fromInt model ]
+            , Html.button 
+                [ onClick Increment
+                , Attrs.class "py-3 px-5 bg-indigo-200 rounded text-white"
+                ] [ Html.text "Add" ]
             ]
         ]
