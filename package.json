@@ -8,6 +8,8 @@
     "elm:dev": "elm reactor",
     "elm:build": "elm make src/Main.elm --output dist/elm.js",
     "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "elm-test-rs",
     "review": "elm-review"
   },
