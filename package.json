@@ -7,7 +7,8 @@
     "postinstall": "elm-tooling install",
     "elm:dev": "elm reactor",
     "elm:build": "elm make src/Main.elm --output dist/elm.js",
-    "dev": "vite"
+    "dev": "vite",
+    "test": "elm-test-rs"
   },
   "keywords": [
     "elm",
