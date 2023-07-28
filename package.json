@@ -8,7 +8,8 @@
     "elm:dev": "elm reactor",
     "elm:build": "elm make src/Main.elm --output dist/elm.js",
     "dev": "vite",
-    "test": "elm-test-rs"
+    "test": "elm-test-rs",
+    "review": "elm-review"
   },
   "keywords": [
     "elm",
@@ -20,6 +21,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "elm-review": "^2.10.2",
     "elm-tooling": "^1.14.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
