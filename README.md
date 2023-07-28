@@ -13,3 +13,8 @@ My personal elm template
 - [Elm Parcel Template](https://github.com/kutyel/elm-parcel-template)
 - [25 Elm Examples](https://github.com/bryanjenningz/25-elm-examples)
 - [Elm Programming](https://elmprogramming.com/)
+- [elm-test-rs](https://github.com/mpizenberg/elm-test-rs)
+- [Elm Radio](https://elm-radio.com/)
+- [Elm init next steps](https://github.com/elm/compiler/blob/master/hints/init.md)
+- [elm-review](https://package.elm-lang.org/packages/jfmengels/elm-review/latest/)
+- [Using Tailwind CSS in Elm and VSCode](https://max.hn/thoughts/using-tailwind-css-in-elm-and-vscode)
