@@ -1,8 +1,16 @@
-module Tests exposing (..)
+module Tests exposing (all)
 
-import Test exposing (Test)
+import Expect
+import Test exposing (Test, describe, test)
 
 
-suite : Test
-suite =
-    Test.todo "Implement the first test. See https://package.elm-lang.org/packages/elm-explorations/test/latest for how to do this!"
+all : Test
+all =
+    describe "A Sample Test Suite"
+        [ test "Addition" <|
+            \_ ->
+                Expect.equal 12 (8 + 4)
+        , test "String.left" <|
+            \_ ->
+                Expect.equal "abc" (String.left 3 "abcdefg")
+        ]
