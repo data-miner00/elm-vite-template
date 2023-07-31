@@ -11,7 +11,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "elm-test-rs",
-    "review": "elm-review"
+    "review": "elm-review",
+    "format": "elm-format ."
   },
   "keywords": [
     "elm",
