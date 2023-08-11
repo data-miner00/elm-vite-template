@@ -37,18 +37,36 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    Html.div [ Attrs.class "w-fit mx-auto mt-10" ]
-        [ Html.div []
-            [ Html.button
-                [ onClick Decrement
-                , Attrs.class "py-3 px-5 bg-pink-400 rounded text-white"
+    Html.div []
+        [ Html.header [ Attrs.class "border-gray-200 border border-solid p-4 w-fit mx-auto mt-5" ]
+            [ Html.nav []
+                [ Html.ul [ Attrs.class "flex gap-4" ]
+                    [ Html.li []
+                        [ Html.a [ Attrs.class "underline", Attrs.href "/" ]
+                            [ Html.text "Home"
+                            ]
+                        ]
+                    , Html.li []
+                        [ Html.a [ Attrs.class "underline", Attrs.href "https://google.com" ]
+                            [ Html.text "Google"
+                            ]
+                        ]
+                    ]
                 ]
-                [ Html.text "Sub" ]
-            , Html.div [ Attrs.class "text-center" ] [ Html.text <| String.fromInt model ]
-            , Html.button
-                [ onClick Increment
-                , Attrs.class "py-3 px-5 bg-indigo-400 rounded text-white"
+            ]
+        , Html.div [ Attrs.class "w-fit mx-auto mt-5" ]
+            [ Html.div []
+                [ Html.button
+                    [ onClick Decrement
+                    , Attrs.class "py-3 px-5 bg-pink-400 rounded text-white"
+                    ]
+                    [ Html.text "Sub" ]
+                , Html.div [ Attrs.class "text-center" ] [ Html.text <| String.fromInt model ]
+                , Html.button
+                    [ onClick Increment
+                    , Attrs.class "py-3 px-5 bg-indigo-400 rounded text-white"
+                    ]
+                    [ Html.text "Add" ]
                 ]
-                [ Html.text "Add" ]
             ]
         ]
