@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "test": "elm-test-rs",
     "review": "elm-review",
-    "format": "elm-format ."
+    "format": "elm-format .",
+    "repl": "elm repl"
   },
   "keywords": [
     "elm",
