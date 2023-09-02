@@ -20,7 +20,7 @@
   <p align="center">
     Minimalistic Elm Template powered by Vite!
     <br />
-    <a href="https://github.com/data-miner00/elm-vite-template"><strong>View Demo »</strong></a>
+    <a href="https://elm-vite-template.vercel.app"><strong>View Demo »</strong></a>
     <br />
     <br />
     <a href="https://github.com/data-miner00/elm-vite-template">Explore the docs</a>
@@ -153,6 +153,10 @@ To use this template for personal use or contribution, simply perform the follow
     ```sh
     pnpm elm:build
     ```
+12. Start interactive Elm shell
+    ```sh
+    pnpm repl
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +164,7 @@ To use this template for personal use or contribution, simply perform the follow
 
 ## Roadmap
 
-- [ ] Add Homepage
+- [x] Add Homepage
 - [ ] Add 404 page
 - [ ] Dark mode
 - [ ] Add GitHub workflows
@@ -218,6 +222,7 @@ List of resources that are helpful and would like to give credit to.
 - [Elm init next steps](https://github.com/elm/compiler/blob/master/hints/init.md)
 - [elm-review](https://package.elm-lang.org/packages/jfmengels/elm-review/latest/)
 - [Using Tailwind CSS in Elm and VSCode](https://max.hn/thoughts/using-tailwind-css-in-elm-and-vscode)
+- [Getting Started with the Elm Programming Language](https://www.toptal.com/front-end/getting-started-elm-language)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
