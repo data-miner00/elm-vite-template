@@ -38,7 +38,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
     Html.div [ Attrs.class "h-screen flex items-center justify-center" ]
-        [ Html.div [ Attrs.class "border-gray-300 border border-dashed" ]
+        [ Html.div [ Attrs.class "border-gray-300 border border-dashed mx-4 md:mx-0" ]
             [ Html.div [ Attrs.class "border-b border-dashed border-gray-300 p-4" ]
                 [ Html.p [ Attrs.class "text-lg font-serif font-medium" ]
                     [ Html.text "Elm Vite Template" ]
