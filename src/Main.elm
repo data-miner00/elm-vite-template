@@ -37,36 +37,35 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    Html.div []
-        [ Html.header [ Attrs.class "border-gray-200 border border-solid p-4 w-fit mx-auto mt-5" ]
-            [ Html.nav []
-                [ Html.ul [ Attrs.class "flex gap-4" ]
-                    [ Html.li []
-                        [ Html.a [ Attrs.class "underline", Attrs.href "/" ]
-                            [ Html.text "Home"
-                            ]
-                        ]
-                    , Html.li []
-                        [ Html.a [ Attrs.class "underline", Attrs.href "https://google.com" ]
-                            [ Html.text "Google"
-                            ]
-                        ]
-                    ]
+    Html.div [ Attrs.class "h-screen flex items-center justify-center" ]
+        [ Html.div [ Attrs.class "border-gray-300 border border-dashed" ]
+            [ Html.div [ Attrs.class "border-b border-dashed border-gray-300 p-4" ]
+                [ Html.p [ Attrs.class "text-lg font-serif font-medium" ]
+                    [ Html.text "Elm Vite Template" ]
+                , Html.p [ Attrs.class "" ]
+                    [ Html.text "This is a template that focuses on simplicity and performance" ]
                 ]
-            ]
-        , Html.div [ Attrs.class "w-fit mx-auto mt-5" ]
-            [ Html.div []
-                [ Html.button
-                    [ onClick Decrement
-                    , Attrs.class "py-3 px-5 bg-pink-400 rounded text-white"
+            , Html.div [ Attrs.class "flex items-center" ]
+                [ Html.a
+                    [ Attrs.class "block w-24 h-24 p-4 border-r border-dashed border-gray-300 hover:bg-gray-50"
+                    , Attrs.href "https://elm-lang.org/"
+                    , Attrs.target "_blank"
+                    , Attrs.title "Visit Elm's documentation"
                     ]
-                    [ Html.text "Sub" ]
-                , Html.div [ Attrs.class "text-center" ] [ Html.text <| String.fromInt model ]
-                , Html.button
-                    [ onClick Increment
-                    , Attrs.class "py-3 px-5 bg-indigo-400 rounded text-white"
+                    [ Html.img [ Attrs.src "/assets/elm.png", Attrs.alt "Elm's logo" ] [] ]
+                , Html.div [ Attrs.class "flex p-4 items-center gap-4" ]
+                    [ Html.button
+                        [ onClick Decrement
+                        , Attrs.class "py-3 px-5 bg-pink-400 rounded text-white hover:bg-pink-400/90"
+                        ]
+                        [ Html.text "Sub" ]
+                    , Html.div [ Attrs.class "text-center" ] [ Html.text <| String.fromInt model ]
+                    , Html.button
+                        [ onClick Increment
+                        , Attrs.class "py-3 px-5 bg-indigo-400 rounded text-white hover:bg-indigo-400/90"
+                        ]
+                        [ Html.text "Add" ]
                     ]
-                    [ Html.text "Add" ]
                 ]
             ]
         ]
